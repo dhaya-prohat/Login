@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        .bg-yellow {
+        /* .bg-yellow {
             background: linear-gradient(270deg, rgba(192, 160, 2, 0.817), rgb(81, 68, 0));
-        }
+        } */
 
         .box {
             height: 560px;
@@ -19,18 +21,19 @@
             border-radius: 20px;
         }
 
-        @media screen and (min-width: 440px) {
+        /* @media screen and (min-width: 440px) {
             .box {
                 box-shadow: 8px 8px 35px rgba(192, 160, 2, 0.817), -8px -8px 35px rgb(81, 68, 0);
                 transition: all 0.5s ease;
             }
-        }
+        } */
 
         .innerbox {
             height: 460px;
             width: 430px;
             margin: 50px;
             margin-left: 60px;
+            border: 2px solid whitesmoke;
             border-radius: 20px;
             background-color: black;
         }
@@ -52,14 +55,23 @@
                 margin-right: 10px;
                 border-radius: 20px;
                 background-color: black;
-                box-shadow: 0px 0px 20px rgba(192, 160, 2, 0.817), 0px 0px 20px rgb(81, 68, 0);
+                /* box-shadow: 0px 0px 20px rgba(192, 160, 2, 0.817), 0px 0px 20px rgb(81, 68, 0); */
                 transition: all 0.5s ease;
             }
         }
 
         .custom-input {
+            width: 270px;
+            height: 30px;
+            font-size: 15px;
+            border: 1px solid white;
             background-color: black !important;
             color: white !important;
+            border-radius: 10px;
+        }
+
+        .custom-input:focus {
+            outline: none;
         }
 
         .font-shadow {
@@ -68,10 +80,12 @@
             text-shadow: 2px 2px rgb(110, 10, 110);
             font-weight: bold;
         }
+
         .text-blue {
             color: rgb(123, 3, 123);
             letter-spacing: 1px;
         }
+
         .font-shadow1 {
             color: rgb(5, 57, 121);
             letter-spacing: 3px;
@@ -99,26 +113,31 @@
                 <div" class=" box  bg-yellow text-white">
                     <div class="innerbox container-fluid text-center ">
                         <div class="row ">
-                            <h3 class="col-12 my-4 fw-bold">Welcome to Login Page !</h3>
+                            <h3 class="col-12 my-4  mt-5 font-monospace">Welcome to Login Page!</h3>
                             <form class="" action="">
-                            <div class=" mt-3 mb-3 "><h5 class="font-shadow fs-5">Username</h5></div>
-                            <div class=" mx-1"><input class="form-control form-control-md custom-input rounded-5" type="email"></div>
-                            <div class=" my-3"> <h5 class="font-shadow1 fs-5">Password</h5></div>
-                            <div class=""><input class="form-control form-control-md custom-input rounded-5" type="password" required><i class="fa fa-eye"></i></div>
-                            <div class=" d-flex justify-content-start mt-2"><span class="badge text-blue ">Rememeber me<input class="ms-2" type="checkbox"></span></div>
-                            <div class=" d-flex justify-content-end mt-2"><a href="#" class="text-decoration-none">Forgot password ?</a></div>
-                            <div class="col-12 mt-4">
-                                <div class="d-flex justify-content-center"><button
-                                        class="btn btn-primary  rounded-5 fw-bold px-4" type="submit">Login</button>
+                                <div class=" mt-3 mb-3 ">
+                                    <h5 class="font-shadow fs-5">Username</h5>
                                 </div>
-                            </div>
-                            <div class="mt-3 mb-2"><span class="badge">Don't have a account ?</span><a class="text-success text-decoration-none font-monospace " href="#">Register</a>
-                            </div>
-                            </form>
+                                <div class=" mx-1"><input class="custom-input p-3" type="email"></div>
+                                <div class=" my-3">
+                                    <h5 class="font-shadow1 fs-5">Password</h5>
+                                </div>
+                                <div class=""><input class="custom-input p-3" type="password" required></div>
+                                <div class=" d-flex justify-content-center mt-3 ">Rememeber me<input class="ms-2"
+                                        type="checkbox"></div>
+                                <div class="col-12 mt-5">
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <a class="text-decoration-none text-success me-1" href="#">Login</a>/
+                                        <a class="text-decoration-none text-info ms-1" href="#">Register</a>
+                                    </div>
+                                </div>
+                                <!-- <div class=" d-flex justify-content-end mt-2"><a href="#" class="text-decoration-none">Forgot password ?</a></div> -->
                         </div>
+                        </form>
                     </div>
             </div>
         </div>
+    </div>
     </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
